@@ -1,0 +1,13 @@
+.container{
+    padding-top: 240px;
+}
+
+.upcommingEvents{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 52px;
+}
+
+.upcommingEvents i{
+    padding-left: 14px;
+}

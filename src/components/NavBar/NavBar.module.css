@@ -1,0 +1,163 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
+
+.container .leftSide .logo{
+    font-weight: 700;
+    font-size: 18px;
+    color: #CF2D2D;
+}
+
+.userLocation{
+    display: none;
+}
+
+.menuButton{
+    padding: 6px 10px;
+    background-color: #000000;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.menuButton:hover{
+    background-color: rgba(0, 0, 0, 0.775);
+}
+
+.menuButton:active{
+    background-color: rgba(0, 0, 0, 0.675);
+}
+
+.menuButton i{
+    padding-right: 10px;
+    color: #f0f0f0;
+}
+
+.menuButton span{
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+.middleElement{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+}
+
+.container .searchBar{
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1.5px solid rgba(128, 128, 128, 0.608);
+    margin-left: 6px;
+}
+
+.container .searchBar i{
+    padding-right: 4px;
+}
+
+.container .searchBar input{
+    outline: none;
+    border: none;
+    width: 420px;
+}
+
+.container .searchBar i{
+    color: rgba(128, 128, 128, 0.608);
+    font-size: 14px;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.rightSide button{
+    padding: 6px 12px;
+    color: #636363;
+    cursor: pointer;
+}
+
+.rightSide .favoritesButton{
+    border: none;
+    background-color: #ffffff;
+}
+
+.rightSide .favoritesButton i{
+    padding-right: 6px;
+}
+
+.rightSide .signIn{
+    border: 1.5px solid rgba(128, 128, 128, 0.608);
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.mobileNavBarIcons{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        overflow-x: hidden;
+        justify-content: space-between;
+        margin-left: 12px;
+        height: 60px;
+    }
+
+    .container .leftSide{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-left: 8px;
+    }
+
+    .container .leftSide .logo{
+        font-size: 14px;
+    }
+    
+    .userLocation{
+        display: contents;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .leftSide .userLocation{
+        font-size: 10px;
+        color: #808080;
+    }
+
+    .leftSide .userLocation i{
+        font-size: 8px;
+    }
+
+    .leftSide .userLocation i:first-child{
+        padding-right: 4px;
+    }
+
+    .leftSide .userLocation i:last-child{
+        padding-left: 6px;
+    }
+
+    .middleElement, .rightSide .favoritesButton, .rightSide .signIn{
+        display: none;
+    }
+    .mobileNavBarIcons{
+        display: contents;
+        color: #a0a0a0;
+    }
+    .mobileNavBarIcons i{
+        padding-right: 1px;
+    }
+    .mobileNavBarIcons i:last-child{
+        padding-right: 14px;
+    }
+}
+  
