@@ -7,15 +7,13 @@ const BannerDisplayer = () => {
     const [currentDisplaySize, setCurrentDisplaySize] = useState(window.innerWidth)
 
     const fetchData = async () => {
-      const url = "link";
+      const url = process.env.REACT_RECOMMENDED_EVENTS_KEY
       try {
         const response = await fetch(url);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        console.log(data.events);
-    
         setRecommendedEvents(data.events);
       } catch (error) {
         console.error('There was a problem with the fetch operation:', error);
@@ -57,7 +55,8 @@ const BannerDisplayer = () => {
                 recommendedEvents.map(e => (
                   <div className={styles.eventItem}>
                     <img
-                    className={styles.eventImage}  
+                    className={styles.eventImage} 
+                    src={`https://drive.google.com/thumbnail?id=${e.imgUrl.slice(32, 65)}`} 
                     alt="Event" />
                     <div className={styles.itemDetails}>
                         <span className={styles.eventTitle}>Make Agree</span>
