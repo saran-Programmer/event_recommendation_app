@@ -7,7 +7,7 @@ const BannerDisplayer = () => {
     const [currentDisplaySize, setCurrentDisplaySize] = useState(window.innerWidth)
 
     const fetchData = async () => {
-      const url = process.env.REACT_RECOMMENDED_EVENTS_KEY
+      const url = process.env.REACT_APP_RECOMMENDED_EVENTS_KEY
       try {
         const response = await fetch(url);
         if (!response.ok) {
