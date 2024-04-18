@@ -78,7 +78,18 @@
     margin-left: 50%;
 }
 
+.seeAll{
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    margin-left: 78%;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 768px){
+
+    .container{
+        padding-top: 220px;
+    }
 
     .displayUpCommingEvents .eventItem{
         margin-left: 10px;
@@ -94,5 +105,13 @@
     }
     .upcommingEvents{
         font-size: 14px;
+    }
+
+    .upcomingEvents{
+        margin-left: 20px;
+    }
+
+    .seeAll{
+        margin-left: 28%;
     }
 }

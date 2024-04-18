@@ -5,6 +5,9 @@ import BannerDisplayer from "./components/body/BannerDisplayer"
 import DisplayUpCommingEvents from "./components/body/DisplayUpcommingEvents"
 
 const App = () => {
+
+  document.title = "BookUsNow"
+
   return(
     <div>
       <NavBar />

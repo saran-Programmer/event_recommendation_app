@@ -24,6 +24,7 @@ const DisplayUpCommingEvents = () => {
   return (
     <div className={styles.container}>
       <span className={styles.upcomingEvents}>Upcoming Events <i class="fa-solid fa-arrow-right-long" /></span>
+      <span className={styles.seeAll}>See all</span>
       <InfiniteScroll
       pageStart={0}
       loadMore={fetchData}
