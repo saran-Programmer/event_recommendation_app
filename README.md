@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+HTTP client
+axios library is used to make HTTP Calls
+
+URL
+The application has just two url display upcomming events and display recommended events which are declared in .env variable.
+
+react-loader-spinner
+
+is import into DisplayUpCommingEvents which is used to import loader icon.

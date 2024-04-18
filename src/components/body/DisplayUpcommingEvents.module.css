@@ -32,7 +32,7 @@
 
 .displayUpCommingEvents .eventItem {
     margin: 5px;
-    margin-left:60px;
+    margin-left:45px;
     flex-direction: column;
 }
 
@@ -44,7 +44,7 @@
 
 .eventItem img{
     height: 220px;
-    width: 420px;
+    width: 440px;
     object-fit: cover;
     padding-top: 2px;
     clip-path: inset(10px 20px 10px 20px);
@@ -84,8 +84,13 @@
         margin-left: 10px;
     }
 
+    .eventItem{
+        width: 400px;
+    }
+
     .eventItem img{
-        width: 270px;
+        width: 400px;
+        margin-top: 8px;
     }
     .upcommingEvents{
         font-size: 14px;

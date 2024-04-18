@@ -17,7 +17,6 @@ const DisplayUpCommingEvents = () => {
     setIsLoading(true)
     const response = await axios.get(process.env.REACT_APP_UPCOMMING_EVENTS_KEY);
     setItems([...items, ...response.data.events.slice(0, 9)]);
-    console.log(items)
     setPage(page + 1);
     setIsLoading(false)
   };
